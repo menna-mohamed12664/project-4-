@@ -1,0 +1,179 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 > b::after{
+    content: '';
+    animation: animated 3s linear 1s infinite;
+}
+#main{
+  width: 100%;
+  height: 100vh;
+  background:url(../img/32173710590_4a4d951ea9_h.jpg)  center/cover;
+}
+/* bride of the nile */
+@keyframes animated{
+    0%{
+        content:'M ';
+        color: paleturquoise;
+    }
+    25%{
+        content:'M Y';
+        color:white;
+    }
+    50%{
+        content:'M Y  C';
+        color:paleturquoise;
+    }
+    75%{
+        content:'M Y  C I';
+        color: white;
+    }
+    80%{
+        content:'M Y  C I T';
+        color: white;
+    }
+    100%{
+        content:'M Y  C I T Y';
+        color: paleturquoise;
+    }
+}
+@media(min-width : 0px) and (max-width : 860px){
+       #title{
+        display: none;
+       }
+}
+#moving-icon{
+  display: none;
+}
+.caption-section1 h2{
+      word-spacing: .2em;
+}
+.caption-section1 {
+      font-size : clamp(2.5rem , 7vw , 6rem);
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50% , -50%);
+}
+
+.aside-header{
+    margin-top: 20em;
+    margin-left: 1em;
+    background-attachment: fixed;
+}
+.contain1{
+  background:url(../img/271519842_443013497472559_9215846064673721072_n.jpg) top /cover;
+  border-radius:0px 120px 0px 120px;
+  transition: .5s;
+
+}
+.contain1:hover{
+  border-radius: 120px 0px 120px 0px;
+  background:url(../img/271444633_443013437472565_3712145038384817681_n.jpg) top /cover;
+}
+.contain2{
+  background:url(../img/El-Nasr-Mosque.png)  top /cover;
+  border-radius:0px 120px 0px 120px;
+  transition: .5s;
+
+}
+.contain2:hover{
+  border-radius: 120px 0px 120px 0px;
+  background:url(../img/5647348640_96d23263d6_b.jpg) center /cover;
+}
+.contain3{
+  background:url(../img/llllllo.webp) center /cover;
+  border-radius:0px 120px 0px 120px;
+  transition: .5s;
+
+}
+.contain3:hover{
+  border-radius: 120px 0px 120px 0px;
+  background:url(../img/lllllll.webp) center /cover;
+}
+.contain4{
+  background:url(../img/imagescoooojpeg.jpeg) top /cover;
+  border-radius:0px 120px 0px 120px;
+  transition: .5s;
+
+}
+.contain4:hover{
+  border-radius: 120px 0px 120px 0px;
+  background:url(../img/cooor.jpeg) top /cover;
+}
+.section-4{
+  width: 100%;
+  height: 50vh;
+  background:url(../img/كافيه-ومطعم-ستاسيا-Stasia.webp) fixed center/cover;
+}
+.item{
+  position: relative;
+}
+.item:hover{
+  transform: translateY(-.7em);
+}
+.item::after{
+  content: '';
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 0;
+  height: 0;
+
+  background-color: #ddd;
+  transition: .5s;
+  opacity: 1;
+}
+.item:hover::after{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.item::before{
+  content: '';
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  width: 0;
+  height: 0;
+
+  background-color:#ddd;
+  transition: .5s;
+  opacity: 1;
+}
+.item:hover::before{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.items{
+  border-radius:0px 0px 160px 0px;
+  -moz-border-radius:0px 0px 160px 0px;
+  -webkit-border-radius:0px 0px 160px 0px;  
+  border-left: solid 10px black;
+}
+.clip{
+  border-radius:0px 0px 160px 0px;
+  -moz-border-radius:0px 0px 160px 0px;
+  -webkit-border-radius:0px 0px 160px 0px;  
+}
+.items:hover{
+  transform: translateY(-.7em);
+}
+@media(max-width){
+.clip{
+  border-radius:0px 0px 0px 0px;
+  -moz-border-radius:0px 0px 0px 0px;
+  -webkit-border-radius:0px 0px 0px 0px;
+}
+}
+#moving-icon{
+  display: block;
+}
